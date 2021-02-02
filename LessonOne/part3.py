@@ -1,8 +1,7 @@
 # вводим данные
-inp = int(input("введите число"))
+inp = input("введите число")
 # конкатенируем строки
-a = str(inp)
-a2 = int(a+a)
-a3 = int(a+a+a)
+a2 = int(inp+inp)
+a3 = int(inp+inp+inp)
 # выводим данные
-print (int(a),'+',a+a,'+',a+a+a, '=', int(a)+a2+a3)
+print (int(inp),'+',inp+inp,'+',inp+inp+inp, '=', int(inp)+a2+a3)
