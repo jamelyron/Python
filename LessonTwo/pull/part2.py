@@ -1,5 +1,4 @@
 
-import math
 while True:
     try:
         print("Сколько элементов в списке?")
@@ -16,12 +15,14 @@ while i < mas:
     my_list.append(input())
     i += 1
 
-if mas > 1 :
-    while j <= math.ceil(mas/2):
-        my_list[j], my_list[j + 1] = my_list[j + 1], my_list[j]
-        j += 2
+if mas > 1:
+    if mas % 2 == 0:
+        while j < len(my_list):
+            my_list[j], my_list[j + 1] = my_list[j + 1], my_list[j]
+            j += 2
+    else:
+        while j < len(my_list)-2:
+            my_list[j], my_list[j + 1] = my_list[j + 1], my_list[j]
+            j += 2
 
 print(my_list)
-
-
-
